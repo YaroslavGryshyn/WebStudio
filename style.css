@@ -1,0 +1,31 @@
+.blue {
+    color: #2196F3;
+
+}
+
+.black {
+    color: #212121; 
+}
+
+.description {
+    color: #757575;
+}
+
+.background-services {
+    background-color: #2196F3;
+    color: white;
+}
+
+.background-color {
+    background-color: #2F303A;
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+.background-gray {
+    background-color: #F5F4FA;
+    color: #212121;
+}
