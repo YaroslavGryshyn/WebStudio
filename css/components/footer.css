@@ -1,0 +1,136 @@
+.footer_section {
+  background-color: #2f303a;
+}
+
+.footer_container {
+  display: flex;
+  gap: 70px;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer_container img {
+  margin-bottom: 20px;
+}
+
+footer address {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .card_socials {
+  justify-content: start;
+}
+
+.footer_address {
+  margin-bottom: 9px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: white;
+}
+
+.footer_contact {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff99;
+}
+
+.footer_contact:first-child {
+    margin-bottom: 9px;
+}
+
+.footer_second--title {
+  margin-bottom: 20px;
+  font-family: Roboto;
+font-size: 14px;
+font-weight: 700;
+line-height: 16.41px;
+letter-spacing: 0.03em;
+text-align: left;
+color: #FFFFFF;
+text-transform: uppercase;
+}
+
+footer .card_socials svg g path {
+  fill: #FFFFFF;
+}
+
+address {
+  font-style: normal;
+}
+
+.footer_right {
+  display: flex;
+  gap: 93px;
+}
+
+.footer_third--title {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.footer_third input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF4D;
+  box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.footer_third input::placeholder {
+  padding-left: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF99;
+}
+
+.footer_third button {
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #2196F3;
+  color: #FFFFFF;
+  font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.06em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+display: flex; 
+align-items: center;
+gap: 16px;
+border: 0;
+}
+
+.footer_third--email--wrapper {
+  display: flex;
+  gap: 12px;
+}

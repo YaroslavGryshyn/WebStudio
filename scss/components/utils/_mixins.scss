@@ -1,0 +1,74 @@
+@mixin containerProperties {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin headerLink {
+  font-family: $siteFont;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: $lightBlack;
+  transition: $transitionValue;
+}
+
+@mixin headerRightPart {
+  @extend headerLink;
+  color: $lightGrey;
+}
+
+@mixin mainSectionTitle {
+  font-family: $siteFont;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: $lightBlack;
+  margin-bottom: 50px;
+}
+
+@mixin cardTitleBaseStyles {
+  font-family: $siteFont;
+  letter-spacing: 0.03em;
+  color: $lightBlack;
+}
+
+@mixin mainSecondCardTitle {
+  @include cardTitleBaseStyles;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+}
+
+@mixin mainSecondCardText {
+  font-family: $siteFont;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: $lightGrey;
+}
+
+@mixin mainFourthCardTitle {
+  @include cardTitleBaseStyles;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+}
+
+@mixin mainFourthCardText {
+  font-family: $siteFont;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  letter-spacing: 0.03em;
+  color: $lightGrey;
+}

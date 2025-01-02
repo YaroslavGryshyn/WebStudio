@@ -1,0 +1,122 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    &_container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &_right {
+        &--side {
+            display: flex;
+            gap: 30px;
+    
+            &--part {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                svg {
+                    transition: .5s;
+                }
+
+                &:hover {
+                    cursor: pointer;
+
+                    svg path {
+                        fill: #2196f3;
+                        transition: .5s;
+                    }
+
+                    a {
+                        color: #2196f3; 
+                    }
+                }
+            }
+
+        }
+
+        &--link {
+            font-family: Roboto;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16.41px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #757575;
+                transition: .5s;
+
+                &:hover {
+                    transition: .5s;
+                    color: #2196f3;
+                }
+
+                &:first-child {
+                    margin-right: 50px;
+                }
+        }
+    }
+
+   
+
+    &_left {
+        &--side {
+            display: flex;
+        }
+
+        &--image {
+            margin-right: 93px;
+        }
+    }
+
+    &_navigation {
+        display: flex;
+        align-items: center;
+
+        &--items {
+            transition: 0.5s;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.41px;
+            letter-spacing: 0.02em;
+            color: #212121;
+
+            &:not(:last-child) {
+                margin-right: 50px;
+            }
+
+            &:first-child {
+                position: relative;
+                color: #2196F3;
+
+                &::after {
+                    content: "";
+                    width: 48px;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #2196F3;
+                    display: block;
+                    top: 41px;
+                    position: absolute;
+                }
+
+            
+            }
+
+            a {
+                transition: .5s;
+
+                &:hover {
+                    transition: 0.5s;
+                    color: #2196f3;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,239 @@
+.main {
+  margin-bottom: 124px;
+
+  &_container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  &_first {
+
+    &--section {
+      background-image: url("/images/fon.png");
+
+      .main_container {
+        padding-top: 12.5rem;
+        padding-bottom: 12.5rem;
+        margin-bottom: 94px;
+      }
+    }
+
+    &--title {
+      margin-bottom: 30px;
+      max-width: 696px;
+      font-family: Roboto;
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 60px;
+      letter-spacing: 0.06em;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    &--content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &--btn {
+      transition: 1s ease-in-out;
+      width: 216px;
+      height: 50px;
+      border-radius: 4px;
+      border: 0;
+      background-color: #2196f3;
+      color: white;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.11);
+        background-color: red;
+      }
+
+    }
+  }
+
+  &_second {
+
+    &--section {
+      .main_container {
+        margin-bottom: 94px;
+      }
+    }
+
+    &--card--image {
+      margin-bottom: 30px;
+    }
+
+    &--title {
+      margin-bottom: 10px;
+      @include mainSecondCardTitle;
+    }
+
+    &--text {
+      @include mainSecondCardText;
+    }
+
+  }
+
+  &_third {
+    &--section {
+      .main_container {
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+
+    &--title {
+      @include mainSectionTitle;
+    }
+
+    &--images {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card {
+      box-shadow: 0px 2px 1px 0px #00000033;
+
+      box-shadow: 0px 1px 1px 0px #00000024;
+
+      box-shadow: 0px 1px 3px 0px #0000001F;
+      padding-bottom: 20px;
+
+      &_title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #212121;
+      }
+
+      &_text {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.75px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #757575;
+      }
+    }
+
+
+  }
+
+  &_fourth {
+    &--section {
+      margin-top: 94px;
+      padding-top: 94px;
+      padding-bottom: 94px;
+      background-color: #F5F4FA;
+
+      .main_container {
+        flex-direction: column;
+      }
+    }
+
+    &--title {
+      @include mainSectionTitle;
+    }
+
+    &--cards {
+      display: flex;
+      justify-content: space-between;
+
+      .card {
+        &_title {
+          margin-top: 30px;
+          margin-bottom: 10px;
+          @include mainFourthCardTitle;
+        }
+
+        &_text {
+         @include mainFourthCardText;
+        }
+
+        img {
+          width: 270px;
+          height: 260px;
+        }
+
+        .card_socials {
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          margin-top: 16px;
+
+          svg path,
+          svg g path {
+            cursor: pointer;
+            transition: .5s;
+          }
+
+          svg:hover {
+            path {
+              fill: #2196f3;
+              transition: .5s;
+            }
+
+            g path {
+              fill: white;
+              transition: .5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_fifth {
+
+    &--section {
+      margin-top: 94px;
+      .main_container {
+          flex-direction: column;
+          align-items: center;
+        }
+    }
+
+    &--title {
+      margin-bottom: 50px;
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42.19px;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+
+    &--clients {
+      display: flex;
+        gap: 30px;
+        svg {
+          cursor: pointer;
+          &:hover rect {
+            stroke: #2196f3;
+              transition: 0.5s;   
+          }
+          rect, path {
+              transition: 0.5s;
+          }
+          &:hover path {
+             fill: #2196f3;
+             transition: 0.5s;
+          }
+        }
+    }
+  }
+}

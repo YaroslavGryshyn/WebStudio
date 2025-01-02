@@ -1,0 +1,130 @@
+.main {
+    margin-top: 119px;
+
+    &_container {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &_navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    &_link {
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #212121;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        transition: 0.5s;
+        background-color: #F5F4FA;
+        padding: 6px 22px;
+        border-radius: 4px;
+        margin-bottom: 50px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            background-color: #2196F3;
+            color: white;
+            border-radius: 4px;
+        }
+    }
+
+    &_second {
+        &--section {
+            padding-bottom: 94px;
+        }
+
+        &--line {
+            display: flex;
+            justify-content: space-between;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            .card {
+                height: 404px;
+                overflow: hidden;
+                position: relative;
+
+                img {
+                    margin-bottom: 20px;
+                }
+
+                &_title {
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    letter-spacing: 0.06em;
+                    text-align: left;
+                    color: #212121;
+                }
+
+                &_text {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: 0.03em;
+                    text-align: left;
+                    padding-bottom: 20px;
+                    color: #757575;
+                }
+
+                &_text,
+                &_title {
+                    padding-left: 24px;
+                }
+
+                &:hover &_hover {
+                    transform: translateY(0);
+                    top: 0;
+                    height: 75%;
+                }
+
+                &_hover {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background-color: #2196F3E5;
+                    transform: translateY(100%);
+                    transition: transform .5s ease;
+
+                    &--text {
+                        font-family: Roboto;
+                        max-width: 340px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0.03em;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: white;
+                        padding: 63px 0px 63px 24px;
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
